@@ -164,4 +164,9 @@ section h2 {
   height: 700px;
   object-fit: cover;
 }
+@media screen and (max-width: 1199px) {
+  .mainvisual img {
+    height: auto;
+  }
+}
 /*メインビジュアルここまで*/
