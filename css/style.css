@@ -84,7 +84,7 @@ section h2 {
   
   .header h1 {
     margin: 0 0 0 25px;	
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: #fff;
     font-family: sans-serif;
   }
@@ -158,3 +158,10 @@ section h2 {
   }
   
 /*ヘッダーここまで*/
+
+/*メインビジュアルここから*/
+.mainvisual img {
+  height: 700px;
+  object-fit: cover;
+}
+/*メインビジュアルここまで*/
