@@ -224,4 +224,29 @@ section h2 {
   background: #333;
   color: #fff;
 }
+
+/*お知らせレスポンシブ*/
+@media screen and (max-width: 1199px) {
+
+  .topics {
+    padding: 50px 5vw;
+  }
+
+  .topics .content-wrapper {
+    display: block;
+  }
+
+  .topics .heading {
+    width: 100%;
+  }
+    
+  .topics .heading h2 {
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+    
+  .topics .content {
+    width: 100%;
+  }
+}
 /*お知らせここまで*/
