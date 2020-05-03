@@ -249,4 +249,19 @@ section h2 {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 479px) {
+
+  .topics .content th {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 1.25em 0 0 0;
+  }
+  
+  .topics .content td {
+  display: block;
+  width: 100%;
+  }
+}
 /*お知らせここまで*/
