@@ -267,6 +267,7 @@ section h2 {
 
   .topics .content .btn a {
     width: 35%;
+    min-width: 200px;
     margin: 0 auto;
   }
 }
