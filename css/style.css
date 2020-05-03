@@ -264,5 +264,10 @@ section h2 {
   display: block;
   width: 100%;
   }
+
+  .topics .content .btn a {
+    width: 35%;
+    margin: 0 auto;
+  }
 }
 /*お知らせここまで*/
