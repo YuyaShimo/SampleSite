@@ -219,4 +219,9 @@ section h2 {
   text-align: center;
   margin: 0 0 0 auto;
 }
+
+.topics .content .btn a:hover {
+  background: #333;
+  color: #fff;
+}
 /*お知らせここまで*/
