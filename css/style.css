@@ -282,6 +282,7 @@ section h2 {
   background-size: cover;
   background-repeat: no-repeat;;
   background-position: center;
+  background-attachment: fixed;
   z-index: 1;
 }
 
@@ -342,3 +343,51 @@ section h2 {
   }
 }
 /*事業案内ここまで*/
+
+/*メンバーここから*/
+.members {
+  padding: 50px 0;
+  height: 500px;
+}
+
+.members-wrapper {
+  margin-top: 50px;
+}
+
+.members .content h2 {
+  text-align: left;
+}
+
+.members-subtitle {
+  text-align: left;
+}
+
+.members .content p {
+  margin: 0;
+}
+
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.members .staff h3,p {
+  text-align: center;
+}
+
+.member-position {
+  margin-bottom: 0;
+}
+
+.staff-image img {
+  border: 5px solid orange;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+/*メンバーここまで*/
