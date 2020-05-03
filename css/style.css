@@ -282,6 +282,7 @@ section h2 {
   background-size: cover;
   background-repeat: no-repeat;;
   background-position: center;
+  z-index: 1;
 }
 
 .company-info::after {
@@ -296,6 +297,7 @@ section h2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 2;
 }
 
 .company-info h2 {
@@ -309,7 +311,7 @@ section h2 {
   margin-bottom: 70px;
 }
 
-.company-info p .btn {
+.company-info p.btn {
   margin: 0;
 }
 
@@ -326,5 +328,17 @@ section h2 {
 .company-info p.btn a:hover {
   background: #fff;
   color: #333;
+}
+
+/*事業案内レスポンシブ*/
+@media screen and (max-width: 479px) {
+
+  .company-info .content {
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .company-info h2,p {
+    text-align: center;
+  }
 }
 /*事業案内ここまで*/
