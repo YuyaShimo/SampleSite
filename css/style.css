@@ -346,7 +346,7 @@ section h2 {
 
 /*メンバーここから*/
 .members {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   height: 500px;
 }
 
@@ -354,10 +354,7 @@ section h2 {
   margin-top: 50px;
 }
 
-.members .content h2 {
-  text-align: left;
-}
-
+.members .content h2,
 .members-subtitle {
   text-align: left;
 }
@@ -383,6 +380,40 @@ section h2 {
 .staff-image img {
   border: 5px solid orange;
   border-radius: 50%;
+}
+
+/*メンバーレスポンシブ*/
+
+@media screen and (max-width: 1199px) {
+
+  .members .content h2,
+  .members-subtitle {
+    text-align: center;
+  }
+  .staff {
+    margin: 0 70px;
+  }
+
+  .members-list li:nth-child(1),
+  .members-list li:nth-child(2) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 479px) {
+
+  .members .content h2,
+  .members-subtitle {
+    text-align: center;
+  }
+
+  .members-list {
+    display: block;
+    padding: 0 30px;
+  }
+
+  .staff {
+    margin-bottom: 20px;
+  }
 }
 
 
