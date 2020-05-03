@@ -197,12 +197,12 @@ section h2 {
 }
 
 .topics .content th {
-  padding: 10px;
-  border-bottom: 1px solid;
+  padding: 20px 2rem 20px 0;
+  border-bottom: 1px dotted;
 }
 
 .topics .content td {
-  border-bottom: 1px solid;
+  border-bottom: 1px dotted;
 }
 
 .topics .content .btn {
@@ -215,7 +215,7 @@ section h2 {
   color: #000;
   border: 1px solid #000;
   width: 200px;
-  line-height: 40px;
+  line-height: 60px;
   text-align: center;
   margin: 0 0 0 auto;
 }
