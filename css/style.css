@@ -164,9 +164,35 @@ section h2 {
   height: 700px;
   object-fit: cover;
 }
+/*メインビジュアルレスポンシブ*/
 @media screen and (max-width: 1199px) {
   .mainvisual img {
     height: auto;
   }
 }
 /*メインビジュアルここまで*/
+
+/*お知らせここから*/
+.topics {
+  padding: 120px;
+}
+
+.topics .content-wrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.topics .heading {
+  width: 40%;
+}
+
+.topics .content {
+  width: 60%;
+}
+
+.topics .content table {
+  width: 100%;
+  margin: 0 0 25px 0;
+}
+/*お知らせここまで*/
