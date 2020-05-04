@@ -369,7 +369,7 @@ section h2 {
   justify-content: space-around;
 }
 
-.members .staff h3,p {
+.members .member h3,p {
   text-align: center;
 }
 
@@ -377,7 +377,7 @@ section h2 {
   margin-bottom: 0;
 }
 
-.staff-image img {
+.member-image img {
   border: 5px solid orange;
   border-radius: 50%;
 }
@@ -415,10 +415,11 @@ section h2 {
     margin-bottom: 20px;
   }
 }
-
-
-
-
-
-
 /*メンバーここまで*/
+
+/*採用情報ここから*/
+.recruit {
+  padding: 10% 0;
+  position: relative;
+}
+/*採用情報ここまで*/
