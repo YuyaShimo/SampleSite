@@ -411,6 +411,17 @@ section h2 {
   border-radius: 50%;
 }
 
+.fadein {
+	opacity : 0;
+	transform : translate(0, 50px);
+	transition : all 1.5s;
+	}
+
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+
 /*メンバーレスポンシブ*/
 
 @media screen and (max-width: 1199px) {
