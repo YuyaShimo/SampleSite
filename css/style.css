@@ -386,6 +386,10 @@ section h2 {
 
 @media screen and (max-width: 1199px) {
 
+  .members {
+    height: auto;
+  }
+
   .members .content h2,
   .members-subtitle {
     text-align: center;
@@ -474,10 +478,31 @@ section h2 {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%,-50%) skewY(-2deg);
   z-index: 2;
   color: #fff;
   font-size: 2rem;
   text-align: center;
+}
+
+/*採用情報レスポンシブ*/
+
+@media screen and (max-width: 767px) {
+  .recruit ul {
+    transform: none;
+  }
+
+  .recruit li span {
+    transform: translate(-50%,-50%);
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .recruit ul li {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
 }
 /*採用情報ここまで*/
