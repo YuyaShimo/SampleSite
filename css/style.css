@@ -69,6 +69,7 @@ section h2 {
 
 /*ヘッダーここから*/
 .header {
+  background-color: rgb(000,000,000,.5);
   display:-ms-flexbox;
   display:-webkit-flex;
   display: flex;
@@ -427,6 +428,11 @@ section h2 {
   position: relative;
 }
 
+.recruit h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .recruit::after {
   position: absolute;
   content: "";
@@ -506,3 +512,57 @@ section h2 {
   }
 }
 /*採用情報ここまで*/
+
+/*お問い合わせここから*/
+.contact {
+  width: 100%;
+  height: 500px;
+  background: url(../images/contact.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.contact::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.contact ul {
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+}
+
+.contact li {
+  width: 300px;
+  margin: 0 50px;
+}
+
+.contact li a {
+  border: 1px solid #fff;
+  font-size: 1.25rem;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.contact li a:hover {
+  background: #fff;
+  color: #333;
+}
+/*お問い合わせここまで*/
