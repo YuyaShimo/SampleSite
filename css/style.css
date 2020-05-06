@@ -469,4 +469,15 @@ section h2 {
   background: rgba(50, 50, 50, 0.4);
   transition: all .6s ease;
 }
+
+.recruit li span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
 /*採用情報ここまで*/
