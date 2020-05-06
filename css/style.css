@@ -592,6 +592,7 @@ section h2 {
   display:-ms-flexbox;
   display:-webkit-flex;
   display: flex;
+  margin-bottom: 20px;
 }
 
 .footer .high li a {
