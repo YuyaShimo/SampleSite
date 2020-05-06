@@ -603,4 +603,41 @@ section h2 {
 .footer .high li a:hover {
   opacity: 0.6;
 }
+
+.footer .low {
+  padding: 25px 0 80px 0;
+  color: #333;
+}
+
+.footer .low {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .low span {
+  padding-left: 1em;
+}
+
+.fab {
+  font-size: 2rem;
+  padding-left: 10px;
+}
+
+.fa-twitter-square {
+  color: #55acee;
+}
+
+.fa-facebook-square {
+  color: #315096;
+}
+
+.fa-line {
+  color: #00c300;
+}
+.footer section p {
+  color: #333;
+  text-align: center;
+  font-size: 0.75rem;
+}
 /*フッターここまで*/
