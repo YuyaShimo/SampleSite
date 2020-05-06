@@ -640,4 +640,39 @@ section h2 {
   text-align: center;
   font-size: 0.75rem;
 }
+
+/*フッターレスポンシブ*/
+
+@media screen and (max-width: 1199px) {
+  .footer .high {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer section {
+    padding-top: 50px;
+  }
+
+  .footer .high li {
+    width: calc(100%/3);
+    margin: 0 0 10px;
+  }
+
+  .footer .high li a {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .sns-icon {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer .high h1,.low {
+    text-align: center;
+  }
+}
 /*フッターここまで*/
