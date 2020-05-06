@@ -449,7 +449,7 @@ section h2 {
 }
 
 .recruit ul li {
-  width: 50%;
+  width: 48%;
   position: relative;
 }
 
@@ -459,7 +459,7 @@ section h2 {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 50%;
+  padding-top: 67%;
   background: rgba(50, 50, 50, 0.7);
   z-index: 1;
   transition: all .6s ease;
