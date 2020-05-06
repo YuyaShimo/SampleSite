@@ -433,6 +433,7 @@ section h2 {
   transform: skewX(-30deg);
   height: 150%;
   width: 40%;
+  z-index: -1;
 }
 
 .recruit ul {
