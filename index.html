@@ -11,6 +11,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.fadethis.min.js"></script>
 
 </head>
 <body>
@@ -41,9 +42,18 @@
   <!--メインビジュアルここから-->
   <article class="mainvisual">
     <div class="slider">
-     <div><img src="images/osaka.jpg" alt=""></div>
-     <div><img src="images/kyoto.jpg" alt=""></div>
-     <div><img src="images/hawaii.jpg" alt=""></div>
+      <div>
+        <img src="images/osaka.jpg" alt="">
+        <p class="place">Osaka</p>
+      </div>
+      <div>
+        <img src="images/kyoto.jpg" alt="">
+        <p class="place">Kyoto</p>
+        </div>
+      <div>
+        <img src="images/hawaii.jpg" alt="">
+        <p class="place">Hawaii</p>
+      </div>
     </div>
   </article>
   <!--メインビジュアルここまで-->
@@ -52,7 +62,7 @@
   <article class="topics">
    <section class="content-wrapper">
       <div class="heading">
-        <h2>TOPICS</h2>
+        <h2 class="slide-left">TOPICS</h2>
       </div>
       <div class="content">
         <table>
@@ -85,7 +95,7 @@
   <article class="company-info">
    <section class="content-wrapper">
     <div class="content">
-      <h2>事業案内</h2>
+      <h2 class="slide-left">事業案内</h2>
       <p>
         こちらからご確認いただけます。
       </p>
@@ -99,7 +109,7 @@
   <article class="members">
    <section class="content-wrapper">
     <div class="content">
-      <h2>MEMBER</h2>
+      <h2 class="slide-left">MEMBER</h2>
       <p class="members-subtitle">私たちがWorld Touristのメンバーです。</p>
     </div>
      <div class="members-wrapper">
@@ -140,7 +150,7 @@
 
   <!--採用ここから-->
   <article class="recruit">
-    <h2>採用情報</h2>
+    <h2 class="slide-left">採用情報</h2>
     <section class="content-wrapper">
       <ul>
         <li><a href="#"><figure><img src="images/recruit1.jpg" alt="採用情報画像1"></figure><span>正社員</span></a></li>
