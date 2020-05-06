@@ -566,3 +566,40 @@ section h2 {
   color: #333;
 }
 /*お問い合わせここまで*/
+
+/*フッターここから*/
+
+.footer section {
+  padding-top: 120px;
+}
+
+.footer .high {
+  border-bottom: 1px solid #333;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  -ms-flex-pack:justify;
+  -webkit-justify-content: space-between;
+  justify-content:space-between;
+  align-items: flex-end;
+}
+
+.footer .high h1 {
+  font-size: 1.5rem;
+}
+
+.footer .high ul {
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+}
+
+.footer .high li a {
+  color: #333;
+  padding: 0 25px;
+}
+
+.footer .high li a:hover {
+  opacity: 0.6;
+}
+/*フッターここまで*/
