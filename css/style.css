@@ -447,4 +447,26 @@ section h2 {
   flex-wrap: wrap;
   transform: skewY(2deg);
 }
+
+.recruit ul li {
+  width: 50%;
+  position: relative;
+}
+
+.recruit ul li figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 50%;
+  background: rgba(50, 50, 50, 0.7);
+  z-index: 1;
+  transition: all .6s ease;
+}
+
+.recruit ul li a:hover figure::after {
+  background: rgba(50, 50, 50, 0.4);
+  transition: all .6s ease;
+}
 /*採用情報ここまで*/
