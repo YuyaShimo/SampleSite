@@ -422,4 +422,28 @@ section h2 {
   padding: 10% 0;
   position: relative;
 }
+
+.recruit::after {
+  position: absolute;
+  content: "";
+  background-color: yellow;
+  top: -10%;
+  left: 30%;
+  transform-origin: top left;
+  transform: skewX(-30deg);
+  height: 150%;
+  width: 40%;
+}
+
+.recruit ul {
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  -ms-flex-pack:justify;
+  -webkit-justify-content: space-between;
+  justify-content:space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  transform: skewY(2deg);
+}
 /*採用情報ここまで*/
