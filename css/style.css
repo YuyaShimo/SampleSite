@@ -396,7 +396,7 @@ section h2 {
 .members-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .members .member h3,p {
@@ -408,29 +408,30 @@ section h2 {
 }
 
 .member-image img {
-  border: 5px solid orange;
+  width: 100%;
   border-radius: 50%;
+  border: 5px solid orange;
 }
 
 .fadein:nth-of-type(2) {
-	-moz-transition-delay:300ms;
-	-webkit-transition-delay:300ms;
-	-o-transition-delay:300ms;
-	-ms-transition-delay:300ms;
+	-moz-transition-delay:200ms;
+	-webkit-transition-delay:200ms;
+	-o-transition-delay:200ms;
+	-ms-transition-delay:200ms;
   }
   
 .fadein:nth-of-type(3) {
+  -moz-transition-delay:400ms;
+  -webkit-transition-delay:400ms;
+  -o-transition-delay:400ms;
+  -ms-transition-delay:400ms;
+}
+
+.fadein:nth-of-type(4) {
   -moz-transition-delay:600ms;
   -webkit-transition-delay:600ms;
   -o-transition-delay:600ms;
   -ms-transition-delay:600ms;
-}
-
-.fadein:nth-of-type(4) {
-  -moz-transition-delay:900ms;
-  -webkit-transition-delay:900ms;
-  -o-transition-delay:900ms;
-  -ms-transition-delay:900ms;
 }
 
 .fadein {
@@ -448,23 +449,14 @@ section h2 {
 
 @media screen and (max-width: 1199px) {
 
-  .members {
-    height: auto;
-  }
-
-  .member {
+  .mmember img {
     width: calc(100% / 2);
-    padding: 30px;
   }
-
   .members .content h2,
   .members-subtitle {
     text-align: center;
   }
-  .staff {
-    margin: 0 70px;
-  }
-
+  
   .members-list li:nth-child(1),
   .members-list li:nth-child(2) {
     margin-bottom: 30px;
@@ -482,7 +474,8 @@ section h2 {
     padding: 0 30px;
   }
 
-  .staff {
+  .mmember {
+    padding: 0;
     margin-bottom: 20px;
   }
 }
