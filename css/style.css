@@ -449,8 +449,9 @@ section h2 {
 
 @media screen and (max-width: 1199px) {
 
-  .member img {
+  .member  {
     width: calc(100% / 2);
+    padding: 0 40px;
   }
   .members .content h2,
   .members-subtitle {
@@ -471,11 +472,12 @@ section h2 {
 
   .members-list {
     display: block;
-    padding: 0 30px;
   }
 
   .member {
-    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10%;
     margin-bottom: 20px;
   }
 }
