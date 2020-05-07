@@ -449,7 +449,7 @@ section h2 {
 
 @media screen and (max-width: 1199px) {
 
-  .mmember img {
+  .member img {
     width: calc(100% / 2);
   }
   .members .content h2,
@@ -474,7 +474,7 @@ section h2 {
     padding: 0 30px;
   }
 
-  .mmember {
+  .member {
     padding: 0;
     margin-bottom: 20px;
   }
