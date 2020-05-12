@@ -86,7 +86,7 @@ section h2 {
   .header-logo h1 {
    font-family: serif;
    display: block;
-   font-size: 2.5rem;
+   font-size: 3rem;
    color: #fff;
   }
   
@@ -132,14 +132,14 @@ section h2 {
     text-decoration: none;
     padding-left: 20px;
     padding: 20px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #fff;
   }
   
   
     /*ヘッダーレスポンシブ*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
 
   .header-bg {
     padding: 10px;
@@ -160,6 +160,7 @@ section h2 {
 
   .header-cat label {
     position: absolute;
+    top: 5px;
     right: 10px;
     clear: both;
   }
@@ -167,7 +168,7 @@ section h2 {
   span.hamburger-icon {
     display: inline-block;
     width: 35px;
-    height: 25px;
+    height: 20px;
   }
 
   span.hamburger-icon i {
@@ -226,7 +227,7 @@ section h2 {
     position: fixed;
     opacity: 0;
     background-color: rgba(255,255,255,0.7);
-    top: 50px;
+    top: 40px;
     right: 0;
     transform: translateX(100%);
     bottom: 0;
@@ -275,8 +276,6 @@ section h2 {
   }
 }
     
-      
-  
 /*ヘッダーここまで*/
 
 /*メインビジュアルここから*/
@@ -286,15 +285,6 @@ section h2 {
   object-fit: cover;
 }
 
-.mainvisual .place {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  color: #fff;
-  font-size: 4rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 900;
-}
 /*メインビジュアルレスポンシブ*/
 @media screen and (max-width: 1199px) {
   .mainvisual img {
@@ -302,12 +292,6 @@ section h2 {
   }
 }
 
-@media screen and (max-width: 479px) {
-  .mainvisual .place {
-    font-size: 1.5rem;
-    top: 30%;
-  }
-}
 /*メインビジュアルここまで*/
 
 /*お知らせここから*/
