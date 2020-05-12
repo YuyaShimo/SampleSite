@@ -164,7 +164,7 @@ section h2 {
     clear: both;
   }
 
-  spnn.hamburger-icon {
+  span.hamburger-icon {
     display: inline-block;
     width: 35px;
     height: 25px;
@@ -206,6 +206,72 @@ section h2 {
     transform: rotate(90deg);
     top: 0;
     bottom: 0;
+  }
+
+  .header-cat input:checked + label span.hamburger-icon i:nth-child(3) {
+    margin: auto;
+    transform: rotate(-45deg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .header-cat input:checked ~ .header-navi {
+    z-index: 99;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .header-navi {
+    position: fixed;
+    opacity: 0;
+    background-color: rgba(255,255,255,0.7);
+    top: 50px;
+    right: 0;
+    transform: translateX(100%);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease-out;
+  }
+
+  .header-navi-wrap {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    transition-duration: 1s;
+    transition-property: right;
+  }
+
+  .header-cat input:checked ~ .header-navi .header-navi-wrap {
+    right: 0;
+  }
+
+  .header-navi-list {
+    margin: 0;
+    display: block;
+    justify-content: inherit;
+  }
+
+  .header-navi-item {
+    border-bottom: 1px solid #000;
+  }
+
+  .header-navi-item a {
+    padding: 0 50px;
+    color: #000;
+    font-size: 24px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 1;
+    transition: background-color .3s ease-in-out;
   }
 }
     
