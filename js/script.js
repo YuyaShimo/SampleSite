@@ -6,6 +6,15 @@ $(function(){
       mode: "fade",
     });
 
+    /*スマホナビゲーションチェックボックスを外す処理*/
+    let unlockCheckBox = function() {
+      let $trigger = $('.header__navi a');
+      let $target = $('input[type="checkbox"]');
+      $trigger.click(function() {
+          $target.prop('checked', false);
+      });
+  };
+
     /*テキストフェードイン*/
     $(window).fadeThis();
 
@@ -30,4 +39,5 @@ $(function(){
       $("html, body").animate({scrollTop:position}, speed, "swing");
       return false;
     });
-  });
+
+});
