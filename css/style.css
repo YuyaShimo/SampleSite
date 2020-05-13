@@ -146,6 +146,10 @@ section h2 {
     padding: 10px;
   }
 
+  .header-logo h1 {
+    font-size: 2rem;
+  }
+
   .header-cat input,
   .header-cat label {
     display: block;
@@ -223,7 +227,7 @@ section h2 {
     position: fixed;
     opacity: 0;
     background-color: rgba(255,255,255,0.7);
-    top: 100px;
+    top: 84px;
     right: 0;
     transform: translateX(100%);
     bottom: 0;
