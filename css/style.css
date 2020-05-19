@@ -848,11 +848,11 @@ section h2 {
   height: 200px;
 }
 
-.page-title h2 {
+.page-image h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -200%);
+  transform: translate(-50%, -50%);
 }
 
 .page-container {
