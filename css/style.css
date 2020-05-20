@@ -395,6 +395,83 @@ section h2 {
 }
 /*お知らせここまで*/
 
+/*旅行プランここから*/
+.plan-title {
+  padding: 50px 0;
+}
+
+.plan h2 {
+  text-align: center;
+}
+
+.plan-detail-text {
+  text-align: left;
+}
+
+.plan-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.plan-item {
+  display: flex;
+ flex-wrap: wrap;
+ margin-bottom: 30px;
+}
+
+.plan-img-bg {
+  width: 300px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.plan-img1 {
+  background-image: url(../images/newyork.jpg);
+}
+
+.plan-img2 {
+  background-image: url(../images/page-taiwan.jpg);
+}
+
+.plan-img3 {
+  background-image: url(../images/plan-hawaii.jpg);
+}
+
+.plan-img4 {
+  background-image: url(../images/page-england.jpg);
+}
+.plan-detail {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.plan .btn {
+  /* margin: 50px 0; */
+}
+
+.plan .btn a {
+  display: block;
+  font-size: 0.8rem;
+  color: #000;
+  border: 1px solid #000;
+  width: 200px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0 0 0 auto;
+}
+
+.plan a:hover {
+  background: #333;
+  color: #fff;
+}
+
+
+/*旅行プランここまで*/
+
+
 /*事業案内ここから*/
 .company-info {
   position: relative;
@@ -796,19 +873,21 @@ section h2 {
 
 /*フッターレスポンシブ*/
 
-@media screen and (max-width: 1199px) {
-  .footer .high {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .footer section {
     padding-top: 50px;
   }
 
+  .footer .high {
+    display: block;
+  }
+
+  .high ul {
+    flex-wrap: wrap;
+  }
+
   .footer .high li {
-    width: calc(100%/3);
+    width: calc(100% / 2);
     margin: 0 0 10px;
   }
 
@@ -857,9 +936,6 @@ section h2 {
 
 .page-container {
   width: 100%;
-  background-image: url(../images/page-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .page-inner {
