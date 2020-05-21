@@ -448,10 +448,6 @@ section h2 {
   margin-left: 10px;
 }
 
-.plan .btn {
-  /* margin: 50px 0; */
-}
-
 .plan .btn a {
   display: block;
   font-size: 0.8rem;
@@ -460,7 +456,7 @@ section h2 {
   width: 200px;
   line-height: 60px;
   text-align: center;
-  margin: 0 0 0 auto;
+  margin: 0 auto;
 }
 
 .plan a:hover {
@@ -468,7 +464,35 @@ section h2 {
   color: #fff;
 }
 
+/* 旅行プランレスポンシブ*/
 
+@media screen and (max-width: 1199px) {
+
+  .plan-item {
+    margin: 10px auto;
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+
+  .plan-detail h3 {
+    text-align: center;
+  }
+
+  .plan-img1 {
+    margin: 0 auto;
+  }
+
+  .plan-detail {
+    margin: 0 auto;
+  }
+
+  .plan-btn a {
+    margin: 0;
+  }
+  
+}
 /*旅行プランここまで*/
 
 
