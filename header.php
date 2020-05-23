@@ -15,7 +15,7 @@
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.fadethis.min.js"></script>
   <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class(); ?>>
 
     <!--ヘッダーここから-->
     <header class="header">
@@ -48,3 +48,32 @@
       </div>
     </header>
     <!--ヘッダーここまで-->
+
+    <?php if( is_front_page() ): ?>
+   <!--メインビジュアルここから-->
+   <article class="mainvisual">
+      <div class="slider">
+        <div>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/osaka.jpg" alt="">
+        </div>
+        <div>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/kyoto.jpg" alt="">
+          </div>
+        <div>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/hawaii.jpg" alt="">
+        </div>
+        <div>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/Okinawa.jpg" alt="">
+        </div>
+        <div>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/Shingapore.jpg" alt="">
+        </div>
+      </div>
+    </article>
+    <!--メインビジュアルここまで-->
+<?php else: ?>
+  <div class="page-wrapper">
+  <div style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/bg-page-dummy.png);" class="page-image">
+    <h2><?php echo get_the_title(); ?></h2>
+  </div>
+<?php endif; ?>
