@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>World Tourist</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.fadethis.min.js"></script>
+
+  </head>
+  <body>
+
+    <!--ヘッダーここから-->
+    <header class="header">
+      <div class="header-bg">
+        <div class="header-cat">
+          <div class="header-logo">
+            <h1> World Tourist</h1>
+          </div>
+          <input type="checkbox" id="hamburger">
+          <label for="hamburger">
+            <span class="hamburger-icon">
+              <i></i>
+              <i></i>
+              <i></i>
+            </span>
+          </label>
+          <nav class="header-navi">
+            <div class="header-navi-wrap"> 
+              <ul class="header-navi-list">
+                <li class="header-navi-item"><a href="#topics"><span>お知らせ</span></a></li>
+                <li class="header-navi-item"><a href="#plan"><span>旅行プラン</span></a></li>
+                <li class="header-navi-item"><a href="#company-info"><span>企業情報</span></a></li>
+                <li class="header-navi-item"><a href="#members"><span>メンバー</span></a></li>
+                <li class="header-navi-item"><a href="#recruit"><span>採用情報</span></a></li>
+                <li class="header-navi-item"><a href="#contact"><span>お問い合わせ</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--ヘッダーここまで-->
+    <main>
+    <!--メインビジュアルここから-->
+    <article class="mainvisual">
+      <div class="slider">
+        <div>
+          <img src="images/osaka.jpg" alt="">
+        </div>
+        <div>
+          <img src="images/kyoto.jpg" alt="">
+          </div>
+        <div>
+          <img src="images/hawaii.jpg" alt="">
+        </div>
+        <div>
+          <img src="images/Okinawa.jpg" alt="">
+        </div>
+        <div>
+          <img src="images/Shingapore.jpg" alt="">
+        </div>
+      </div>
+    </article>
+    <!--メインビジュアルここまで-->
+
+    <!--お知らせここから-->
+    <article class="topics">
+    <section class="content-wrapper">
+        <div class="heading">
+          <h2 id="topics" class="slide-left">TOPICS</h2>
+        </div>
+        <div class="content">
+          <table>
+            <tbody>
+              <tr>
+                <th>2020.04.01</th>
+                <td>海外への渡航について。</td>
+              </tr>
+              <tr>
+                <th>2020.02.01</th>
+                <td>国内旅行が最大50%オフになるキャンペーンがスタートしました。</td>
+              </tr>
+              <tr>
+                <th>2020.01.01</th>
+                <td>新春フェアがスタートしました。</td>
+              </tr>
+              <tr>
+                <th>2020.12.01</th>
+                <td>歳末フェアがスタートしました。</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="btn"><a href="#">more</a></p>
+        </div>
+    </section>
+    </article>
+    <!--お知らせここまで-->
+
+    <!--旅行プランここから-->
+    <article class="plan">
+      <section class="content-wrapper">
+        <div class="plan-title">
+          <h2 class="slide-left">旅行プラン</h2>
+          <p>人気のスポットをまとめました。</p>
+        </div>
+        <div class="plan-container">
+          <div class="plan-inner">
+            <div class="plan-main">
+              <ul class="plan-list">
+                <li class="plan-item">
+                  <div class="plan-img">
+                    <div class="plan-img-bg plan-img1"></div>
+                  </div>
+                  <div class="plan-detail">
+                    <h3>ニューヨーク</h3>
+                    <p class="plan-detail-text">ニューヨーク市はアメリカ合衆国北東部の大西洋に面し、巨大なニューヨーク港を持つ。市はブロンクス、ブルックリン、マンハッタン、クイーンズ、スタテンアイランドという5つの行政区（バロウ、ボロウ）に分けられる。2010年の国勢調査における市域人口は817万5,133人を数え、陸地面積は790km2、人口密度はアメリカ国内の主要都市の中で2位である。</p>
+                  </div>
+                </li>
+                <li class="plan-item">
+                  <div class="plan-img">
+                    <div class="plan-img-bg plan-img2"></div>
+                  </div>
+                  <div class="plan-detail">
+                    <h3>台湾</h3>
+                    <p class="plan-detail-text">台湾（たいわん、繁: 臺灣 / 台灣、台: Tâi-oân／Tâi-uân）は、東アジアに位置する島嶼（台湾島）、あるいは台湾島を中心に定義される幾つかの地域としての名称である。
+                      1945年、当時台湾を統治していた日本が第二次世界大戦に敗れたことを受け、台湾は澎湖諸島と共に当時中国大陸を本拠地とした中華民国の施政下に編入され（台湾光復）、中国の一地方となった。</p>
+                  </div>
+                </li>
+                <li class="plan-item">
+                  <div class="plan-img">
+                    <div class="plan-img-bg plan-img3"></div>
+                  </div>
+                  <div class="plan-detail">
+                    <h3>ハワイ</h3>
+                    <p class="plan-detail-text">ハワイ州（英: State of Hawaii [həˈwaɪ.i] ( 音声ファイル) 、ハワイ語: Hawaiʻi）は、太平洋に位置するハワイ諸島にあるアメリカ合衆国の州で、日本で最も人気な海外リゾート地のひとつ。漢字では「布哇」と書く。州都はオアフ島のホノルル市である。アメリカ合衆国50州の中で最後に加盟した州である。海域として定められたミクロネシアの北端でもある。</p>
+                  </div>
+                </li>
+                <li class="plan-item">
+                  <div class="plan-img">
+                    <div class="plan-img-bg plan-img4"></div>
+                  </div>
+                  <div class="plan-detail">
+                    <h3>イギリス</h3>
+                    <p class="plan-detail-text">グレートブリテン及び北アイルランド連合王国（グレートブリテンおよびきたアイルランドれんごうおうこく、英: United Kingdom of Great Britain and Northern Ireland: UK）は、ヨーロッパ大陸の北西岸に位置し、グレートブリテン島・アイルランド島北東部・その他多くの島々から成る立憲君主制国家。首都はロンドン。日本語における通称の一例としてイギリス、英国（えいこく）がある。</p>
+                  </div>
+                </li>
+              </ul>
+              <p class="btn plan-btn"><a href="">more</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <!--旅行プランここまで-->
+
+    <!--事業案内ここから-->
+    <article class="company-info">
+    <section class="content-wrapper">
+      <div class="content">
+        <h2 id="company-info" class="slide-left">企業情報</h2>
+        <p>
+          こちらからご確認いただけます。
+        </p>
+        <p class="btn"><a href="#">more</a></p>
+      </div>
+    </section>
+    </article>
+    <!--事業案内ここまで-->
+
+    <!--メンバーここから-->
+    <article class="members">
+    <section class="content-wrapper">
+      <div class="content">
+        <h2 id="members" class="slide-left">MEMBER</h2>
+        <p class="members-subtitle slide-left">私たちがWorld Touristのメンバーです。</p>
+      </div>
+      <div class="members-wrapper">
+        <ul class="members-list">
+            <li class="member fadein">
+              <div class="member-image">
+                <img src="images/Smith.jpg" alt="Smith画像">
+              </div>
+              <p class="member-position">CEO</p>
+              <h3>Smith</h3>
+            </li>
+            <li class="member fadein">
+              <div class="member-image">
+                <img src="images/Nancy.jpg" alt="Nancy画像">
+              </div>
+              <p class="member-position">CTO</p>
+              <h3>Nancy</h3>  
+            </li>
+            <li class="member fadein">
+              <div class="member-image">
+                <img src="images/Tom.jpg" alt="Tom画像">
+              </div>
+              <p class="member-position">MANAGER</p>
+              <h3>Tom</h3>  
+            </li>
+            <li class="member fadein">
+              <div class="member-image">
+                <img src="images/Emily.jpg" alt="Emily画像">
+              </div>
+              <p class="member-position">DIRECTOR</p>
+              <h3>Emily</h3>  
+            </li>
+        </ul>
+      </div>
+    </section>
+    </article>
+    <!--メンバーここまで-->
+
+    <!--採用ここから-->
+    <article class="recruit">
+      <h2 id="recruit" class="slide-left">採用情報</h2>
+      <section class="content-wrapper">
+        <ul>
+          <li><a href="#"><figure><img src="images/recruit1.jpg" alt="採用情報画像1"></figure><span>正社員</span></a></li>
+          <li><a href="#"><figure><img src="images/recruit2.jpg" alt="採用情報画像2"></figure><span>アルバイト</span></a></li>
+        </ul>
+      </section>
+    </article>
+    <!--採用ここまで-->
+
+    <!--お問い合わせここから-->
+    <article id="contact" class="contact">
+      <ul>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </article>
+    <!--お問い合わせここまで-->
+
+    </main>
+
+    <!--フッターここから-->
+    <footer class="footer">
+    <section class="content-wrapper">
+      <div class="high">
+        <h1>World Tourist</h1>
+        <ul>
+          <li><a href="#">企業情報</a></li>
+          <li><a href="#">旅行プラン</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="low">
+        <div class="address">
+          〒000-0000<span>鹿児島県鹿児島市〇〇町1-1</span><br>
+          TEL：012-3456-7890
+        </div>
+        <div class="sns-icon">
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-line"></i></a>
+        </div>
+      </div>
+      <p>&copy;World Tourist Co.,Ltd.</p>
+    </section>
+    </footer>
+    <!--フッターここまで-->
+    <script src="js/script.js"></script>
+  </body>
+ </html>
