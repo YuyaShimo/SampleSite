@@ -1,3 +1,6 @@
+<?php if( ! is_front_page() ): ?>
+  </div>
+<?php endif; ?>
 <footer class="footer">
     <section class="content-wrapper">
       <div class="high">
