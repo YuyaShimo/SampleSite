@@ -1,26 +1,5 @@
 <?php get_header(); ?>
     <main>
-    <!--メインビジュアルここから-->
-    <article class="mainvisual">
-      <div class="slider">
-        <div>
-          <img src="images/osaka.jpg" alt="">
-        </div>
-        <div>
-          <img src="images/kyoto.jpg" alt="">
-          </div>
-        <div>
-          <img src="images/hawaii.jpg" alt="">
-        </div>
-        <div>
-          <img src="images/Okinawa.jpg" alt="">
-        </div>
-        <div>
-          <img src="images/Shingapore.jpg" alt="">
-        </div>
-      </div>
-    </article>
-    <!--メインビジュアルここまで-->
 
     <!--お知らせここから-->
     <article class="topics">
