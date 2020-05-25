@@ -37,56 +37,87 @@
     <!--旅行プランここから-->
     <article class="plan">
       <section class="content-wrapper">
-        <div class="plan-title">
-          <h2 class="slide-left">旅行プラン</h2>
-          <p>人気のスポットをまとめました。</p>
-        </div>
-        <div class="plan-container">
-          <div class="plan-inner">
-            <div class="plan-main">
-              <ul class="plan-list">
-                <li class="plan-item">
-                  <div class="plan-img">
-                    <div class="plan-img-bg plan-img1"></div>
-                  </div>
-                  <div class="plan-detail">
-                    <h3>ニューヨーク</h3>
-                    <p class="plan-detail-text">ニューヨーク市はアメリカ合衆国北東部の大西洋に面し、巨大なニューヨーク港を持つ。市はブロンクス、ブルックリン、マンハッタン、クイーンズ、スタテンアイランドという5つの行政区（バロウ、ボロウ）に分けられる。2010年の国勢調査における市域人口は817万5,133人を数え、陸地面積は790km2、人口密度はアメリカ国内の主要都市の中で2位である。</p>
-                  </div>
-                </li>
-                <li class="plan-item">
-                  <div class="plan-img">
-                    <div class="plan-img-bg plan-img2"></div>
-                  </div>
-                  <div class="plan-detail">
-                    <h3>台湾</h3>
-                    <p class="plan-detail-text">台湾（たいわん、繁: 臺灣 / 台灣、台: Tâi-oân／Tâi-uân）は、東アジアに位置する島嶼（台湾島）、あるいは台湾島を中心に定義される幾つかの地域としての名称である。
-                      1945年、当時台湾を統治していた日本が第二次世界大戦に敗れたことを受け、台湾は澎湖諸島と共に当時中国大陸を本拠地とした中華民国の施政下に編入され（台湾光復）、中国の一地方となった。</p>
-                  </div>
-                </li>
-                <li class="plan-item">
-                  <div class="plan-img">
-                    <div class="plan-img-bg plan-img3"></div>
-                  </div>
-                  <div class="plan-detail">
-                    <h3>ハワイ</h3>
-                    <p class="plan-detail-text">ハワイ州（英: State of Hawaii [həˈwaɪ.i] ( 音声ファイル) 、ハワイ語: Hawaiʻi）は、太平洋に位置するハワイ諸島にあるアメリカ合衆国の州で、日本で最も人気な海外リゾート地のひとつ。漢字では「布哇」と書く。州都はオアフ島のホノルル市である。アメリカ合衆国50州の中で最後に加盟した州である。海域として定められたミクロネシアの北端でもある。</p>
-                  </div>
-                </li>
-                <li class="plan-item">
-                  <div class="plan-img">
-                    <div class="plan-img-bg plan-img4"></div>
-                  </div>
-                  <div class="plan-detail">
-                    <h3>イギリス</h3>
-                    <p class="plan-detail-text">グレートブリテン及び北アイルランド連合王国（グレートブリテンおよびきたアイルランドれんごうおうこく、英: United Kingdom of Great Britain and Northern Ireland: UK）は、ヨーロッパ大陸の北西岸に位置し、グレートブリテン島・アイルランド島北東部・その他多くの島々から成る立憲君主制国家。首都はロンドン。日本語における通称の一例としてイギリス、英国（えいこく）がある。</p>
-                  </div>
-                </li>
-              </ul>
-              <p class="btn plan-btn"><a href="">more</a></p>
-            </div>
-          </div>
-        </div>
+        <ul class="plan-wrapper">
+          <li class="plan-item">
+            <h2 class="plan-title">ハワイ</h2>
+              <div class="plan-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/hawaii-plan.jpg" alt="">
+              </div>
+              <div class="plan-text">
+                  <p>オアフ島を巡る人気のツアーです</p>
+                  <p>期間：3白5日〜</p>
+                  <p>料金：100,000〜</p>
+                  <p>空席状況：空席あり</p>
+                  <p class="btn"><a href="#">もっとみる</a></p>
+              </div>
+          </li>
+          <li class="plan-item">
+            <h2 class="plan-title">ニューヨーク</h2>
+              <div class="plan-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/newyork-plan.jpg" alt="">
+              </div>
+              <div class="plan-text">
+                  <p>ニューヨークを巡る人気のツアーです</p>
+                  <p>期間：3白5日〜</p>
+                  <p>料金：100,000〜</p>
+                  <p>空席状況：空席あり</p>
+                  <p class="btn"><a href="#">もっとみる</a></p>
+              </div>
+          </li>
+          <li class="plan-item">
+            <h2 class="plan-title">台湾</h2>
+              <div class="plan-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/taiwan-plan.jpg" alt="">
+              </div>
+              <div class="plan-text">
+                  <p>台湾を巡る人気のツアーです</p>
+                  <p>期間：3白5日〜</p>
+                  <p>料金：100,000〜</p>
+                  <p>空席状況：空席あり</p>
+                  <p class="btn"><a href="#">もっとみる</a></p>
+              </div>
+          </li>
+          <li class="plan-item">
+            <h2 class="plan-title">イギリス</h2>
+              <div class="plan-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/england-plan.jpg" alt="">
+              </div>
+              <div class="plan-text">
+                  <p>イギリスを巡る人気のツアーです</p>
+                  <p>期間：3白5日〜</p>
+                  <p>料金：100,000〜</p>
+                  <p>空席状況：空席あり</p>
+                  <p class="btn"><a href="#">もっとみる</a></p>
+              </div>
+          </li>
+          <li class="plan-item">
+            <h2 class="plan-title">ドイツ</h2>
+              <div class="plan-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/germany-plan.jpg" alt="">
+              </div>
+              <div class="plan-text">
+                  <p>ドイツを巡る人気のツアーです</p>
+                  <p>期間：3白5日〜</p>
+                  <p>料金：100,000〜</p>
+                  <p>空席状況：空席あり</p>
+                  <p class="btn"><a href="#">もっとみる</a></p>
+              </div>
+          </li>
+          <li class="plan-item">
+            <h2 class="plan-title">東京</h2>
+              <div class="plan-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/tokyo-plan.jpg" alt="">
+              </div>
+              <div class="plan-text">
+                  <p>東京を巡る人気のツアーです</p>
+                  <p>期間：3白5日〜</p>
+                  <p>料金：100,000〜</p>
+                  <p>空席状況：空席あり</p>
+                  <p class="btn "><a href="#">もっとみる</a></p>
+              </div>
+          </li>
+        </ul>
+        <p class="btn plan-btn"><a href="#">more</a></p>
       </section>
     </article>
     <!--旅行プランここまで-->
