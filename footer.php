@@ -5,12 +5,13 @@
     <section class="content-wrapper">
       <div class="high">
         <h1>World Tourist</h1>
-        <ul>
-          <li><a href="#">お知らせ</a></li>
-          <li><a href="#">旅行プラン</a></li>
-          <li><a href="#">企業情報</a></li>
-          <li><a href="#">お問い合わせ</a></li>
-        </ul>
+<?php
+  wp_nav_menu(
+    array(
+      'theme_location' => 'place_footer'
+    )
+  );
+?>
       </div>
       <div class="low">
         <div class="address">
