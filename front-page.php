@@ -35,7 +35,7 @@
     <!--お知らせここまで-->
 
     <!--旅行プランここから-->
-    <article class="plan">
+    <article id="plan" class="plan">
       <section class="content-wrapper">
         <ul class="plan-wrapper">
           <li class="plan-item">
@@ -117,7 +117,6 @@
               </div>
           </li>
         </ul>
-        <p class="btn plan-btn"><a href="#">more</a></p>
       </section>
     </article>
     <!--旅行プランここまで-->

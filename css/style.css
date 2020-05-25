@@ -451,23 +451,6 @@ section h2 {
   transition: .5s;
 }
 
-.plan .plan-btn a {
-  display: block;
-  font-size: 0.8rem;
-  color: #000;
-  background: #fff;
-  border: 1px solid #000;
-  width: 200px;
-  line-height: 60px;
-  text-align: center;
-  margin: 50px auto;
-  }
-  
-  .plan .plan-btn a:hover {
-    background: #333;
-    color: #fff;
-  }
-
 /* 旅行プランレスポンシブ */
 
 @media screen and (max-width: 479px) {
