@@ -994,6 +994,14 @@ section h2 {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 479px) {
+
+  .page-inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
 /*投稿ページここまで*/
 
 
