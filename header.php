@@ -71,6 +71,6 @@
 <?php else: ?>
   <div class="page-wrapper">
   <div style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/bg-page-dummy.png);" class="page-image">
-    <h2><?php echo get_the_title(); ?></h2>
+    <h2><?php echo get_main_title(); ?></h2>
   </div>
 <?php endif; ?>
