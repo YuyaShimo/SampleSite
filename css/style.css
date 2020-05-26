@@ -102,7 +102,7 @@ section h2 {
     display: none;
   }
 
-  .header-navi-list {
+  .header-navi .menu {
     display: flex;
   }
 

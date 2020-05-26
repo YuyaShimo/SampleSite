@@ -33,16 +33,13 @@
             </span>
           </label>
           <nav class="header-navi">
-            <div class="header-navi-wrap"> 
-              <ul class="header-navi-list">
-                <li class="header-navi-item"><a href="#topics"><span>お知らせ</span></a></li>
-                <li class="header-navi-item"><a href="#plan"><span>旅行プラン</span></a></li>
-                <li class="header-navi-item"><a href="#company-info"><span>企業情報</span></a></li>
-                <li class="header-navi-item"><a href="#members"><span>メンバー</span></a></li>
-                <li class="header-navi-item"><a href="#recruit"><span>採用情報</span></a></li>
-                <li class="header-navi-item"><a href="#contact"><span>お問い合わせ</span></a></li>
-              </ul>
-            </div>
+<?php
+  wp_nav_menu(
+    array(
+      'theme_location' => 'place_footer'
+    )
+  );
+?>
           </nav>
         </div>
       </div>
