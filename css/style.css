@@ -974,7 +974,27 @@ section h2 {
   font-family: serif;
 }
 
+/*投稿ページここから*/
 
+.news {
+  margin-top: 10px;
+}
+.news .time {
+  color: #787878;
+  font-size: 1.2rem;
+}
+
+.news .title {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.more-news {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*投稿ページここまで*/
 
 
 
