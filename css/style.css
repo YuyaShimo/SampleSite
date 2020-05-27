@@ -1004,5 +1004,21 @@ section h2 {
 
 /*投稿ページここまで*/
 
+/*投稿アーカイブここから*/
 
+.news-body {
+  border-bottom: 1px dotted #787878;
+  padding: 10px 0;
+  display: flex;
+}
+
+.news-body .release {
+  margin-right: 10px;
+}
+
+.news-body .title {
+  margin: 0;
+}
+
+/*投稿アーカイブここまで*/
 
