@@ -1,67 +1,40 @@
 <?php get_header(); ?>
 
 <div class="page-wrapper">
-  <div style="background-image: url(images/bg-page-dummy.png);" class="page-image">
-    <h2>企業情報</h2>
-  </div>
   <div class="page-container">
     <div class="page-inner">
       <div class="page-main">
         <ul class="commons">
+        <?php
+  $parent_id = get_the_ID();
+  $args = array(
+    'posts_per_page' => -1,
+    'post_type' => 'page',
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
+    'post_parent' => $parent_id,
+  );
+  $common_pages = new WP_Query( $args );
+  if( $common_pages->have_posts() ):
+    while( $common_pages->have_posts() ): $common_pages->the_post();
+?>
           <li class="common-item">
-            <a class="common-link" href="">
-              <div class="common-image">
+            <a class="common-link" href="<?php the_permalink(); ?>">
+              <div class="common-image"><?php the_posst_thumbnail(); ?></div>
                 <div class="common-body">
-                  <p class="name">会社概要</p>
-                  <p class="caption">あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへへほ...</p>
+                  <p class="name"><?php the_title(); ?></p>
+                  <p class="caption"><?php echo get_the_title(); ?></p>
                 </div>
                 <div class="btn button-box">
                   <button type="button" class="see-detail">MORE >></button>
                 </div>
-              </div>
             </a>
           </li>
-          <li class="common-item">
-            <a class="common-link" href="">
-              <div class="common-image">
-                <div class="common-body">
-                  <p class="name">事業紹介</p>
-                  <p class="caption">あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへへほ...</p>
-                </div>
-                <div class="btn button-box">
-                  <button type="button" class="see-detail">MORE >></button>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="common-item">
-            <a class="common-link" href="">
-              <div class="common-image">
-                <div class="common-body">
-                  <p class="name">沿革</p>
-                  <p class="caption">あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへへほ...</p>
-                </div>
-                <div class="btn button-box">
-                  <button type="button" class="see-detail">MORE >></button>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="common-item">
-            <a class="common-link" href="">
-              <div class="common-image">
-                <div class="common-body">
-                  <p class="name">アクセス</p>
-                  <p class="caption">あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへへほ...</p>
-                </div>
-                <div class="btn button-box">
-                  <button type="button" class="see-detail">MORE >></button>
-                </div>
-              </div>
-            </a>
-          </li>
-
-          
+          <?php
+  endwhile;
+  wp_reset_postdata();
+  endif;
+?>         
         </ul>
       </div>
     </div>
