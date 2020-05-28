@@ -35,3 +35,6 @@ function get_child_pages( $number = -1) {
 
 //アイキャッチ画像
 add_theme_support( 'post-thumbnails' );
+
+//企業情報、旅行プラン一覧の画像サイズを指定
+add_image_size( 'common', 465, 252, true );
