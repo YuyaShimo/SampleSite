@@ -1006,6 +1006,10 @@ section h2 {
 
 /*投稿アーカイブここから*/
 
+.newslist {
+  margin-top: 10%;
+}
+
 .news-body {
   border-bottom: 1px dotted #787878;
   padding: 10px 0;
@@ -1022,3 +1026,9 @@ section h2 {
 
 /*投稿アーカイブここまで*/
 
+/*企業情報一覧*/
+.common-image img {
+  height: 252px;
+}
+
+/*企業情報一覧*/
