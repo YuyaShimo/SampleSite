@@ -48,7 +48,7 @@
                   <p>期間：3白5日〜</p>
                   <p>料金：100,000〜</p>
                   <p>空席状況：空席あり</p>
-                  <p class="btn"><a href="#">もっとみる</a></p>
+                  <p class="plan-btn"><a href="#">もっとみる</a></p>
               </div>
           </li>
           <li class="plan-item">
@@ -61,7 +61,7 @@
                   <p>期間：3白5日〜</p>
                   <p>料金：100,000〜</p>
                   <p>空席状況：空席あり</p>
-                  <p class="btn"><a href="#">もっとみる</a></p>
+                  <p class="plan-btn"><a href="#">もっとみる</a></p>
               </div>
           </li>
           <li class="plan-item">
@@ -74,7 +74,7 @@
                   <p>期間：3白5日〜</p>
                   <p>料金：100,000〜</p>
                   <p>空席状況：空席あり</p>
-                  <p class="btn"><a href="#">もっとみる</a></p>
+                  <p class="plan-btn"><a href="#">もっとみる</a></p>
               </div>
           </li>
           <li class="plan-item">
@@ -87,7 +87,7 @@
                   <p>期間：3白5日〜</p>
                   <p>料金：100,000〜</p>
                   <p>空席状況：空席あり</p>
-                  <p class="btn"><a href="#">もっとみる</a></p>
+                  <p class="plan-btn"><a href="#">もっとみる</a></p>
               </div>
           </li>
           <li class="plan-item">
@@ -100,7 +100,7 @@
                   <p>期間：3白5日〜</p>
                   <p>料金：100,000〜</p>
                   <p>空席状況：空席あり</p>
-                  <p class="btn"><a href="#">もっとみる</a></p>
+                  <p class="plan-btn"><a href="#">もっとみる</a></p>
               </div>
           </li>
           <li class="plan-item">
@@ -113,7 +113,7 @@
                   <p>期間：3白5日〜</p>
                   <p>料金：100,000〜</p>
                   <p>空席状況：空席あり</p>
-                  <p class="btn "><a href="#">もっとみる</a></p>
+                  <p class="plan-btn"><a href="#">もっとみる</a></p>
               </div>
           </li>
         </ul>
