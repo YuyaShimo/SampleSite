@@ -38,3 +38,12 @@ add_theme_support( 'post-thumbnails' );
 
 //企業情報、旅行プラン一覧の画像サイズを指定
 add_image_size( 'common', 465, 252, true );
+
+function get_main_image() {
+  if( is_page() ):
+    return get_the_post_thumbnail( $post->ID, 'detail' );
+  elseif( is_category( 'news' ) || is_singular( 'post' ) ):
+    return '<img src="' . get_template_directory_uri(). '/images/bg-page-news.jpg" />';
+  else:
+    return '<img src="' . get_template_directory_uri(). '/images/bg-page-news.jpg" />';
+}
