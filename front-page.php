@@ -46,7 +46,7 @@ $plan_title = get_the_title();
 <?php wp_reset_postdata(); ?>
         <ul class="plan-wrapper">
 <?php
-$plan_pages = get_child_pages(-1, $plan_obj->ID );
+$plan_pages = get_child_pages( 6, $plan_obj->ID );
 if( $plan_pages->have_posts() ) :
   while( $plan_pages->have_posts() ) : $plan_pages->the_post();
 ?>
