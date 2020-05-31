@@ -36,86 +36,37 @@
 
     <!--旅行プランここから-->
     <article id="plan" class="plan">
+<?php
+$plan_obj = get_page_by_path( 'plan' );
+$post = $plan_obj;
+setup_postdata( $post );
+$plan_title = get_the_title();
+?>
       <section class="content-wrapper">
+<?php wp_reset_postdata(); ?>
         <ul class="plan-wrapper">
+<?php
+$plan_pages = get_child_pages(-1, $plan_obj->ID );
+if( $plan_pages->have_posts() ) :
+  while( $plan_pages->have_posts() ) : $plan_pages->the_post();
+?>
           <li class="plan-item">
-            <h2 class="plan-title">ハワイ</h2>
-              <div class="plan-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/hawaii-plan.jpg" alt="">
-              </div>
-              <div class="plan-text">
-                  <p>オアフ島を巡る人気のツアーです</p>
-                  <p>期間：3白5日〜</p>
-                  <p>料金：100,000〜</p>
-                  <p>空席状況：空席あり</p>
-                  <p class="plan-btn"><a href="#">もっとみる</a></p>
-              </div>
+            <a href="<?php the_permalink(); ?>">
+              <h2 class="plan-title"><?php the_titile(); ?></h2>
+                <div class="plan-img">
+                  <?php the_post_thumbnail( 'common' ); ?>
+                </div>
+                <div class="plan-text">
+                    <p><?php echo get_the_excerpt(); ?></p>
+                    <p class="plan-btn"><a href="#">もっとみる</a></p>
+                </div>
+            </a>
           </li>
-          <li class="plan-item">
-            <h2 class="plan-title">ニューヨーク</h2>
-              <div class="plan-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/newyork-plan.jpg" alt="">
-              </div>
-              <div class="plan-text">
-                  <p>ニューヨークを巡る人気のツアーです</p>
-                  <p>期間：3白5日〜</p>
-                  <p>料金：100,000〜</p>
-                  <p>空席状況：空席あり</p>
-                  <p class="plan-btn"><a href="#">もっとみる</a></p>
-              </div>
-          </li>
-          <li class="plan-item">
-            <h2 class="plan-title">台湾</h2>
-              <div class="plan-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/taiwan-plan.jpg" alt="">
-              </div>
-              <div class="plan-text">
-                  <p>台湾を巡る人気のツアーです</p>
-                  <p>期間：3白5日〜</p>
-                  <p>料金：100,000〜</p>
-                  <p>空席状況：空席あり</p>
-                  <p class="plan-btn"><a href="#">もっとみる</a></p>
-              </div>
-          </li>
-          <li class="plan-item">
-            <h2 class="plan-title">イギリス</h2>
-              <div class="plan-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/england-plan.jpg" alt="">
-              </div>
-              <div class="plan-text">
-                  <p>イギリスを巡る人気のツアーです</p>
-                  <p>期間：3白5日〜</p>
-                  <p>料金：100,000〜</p>
-                  <p>空席状況：空席あり</p>
-                  <p class="plan-btn"><a href="#">もっとみる</a></p>
-              </div>
-          </li>
-          <li class="plan-item">
-            <h2 class="plan-title">ドイツ</h2>
-              <div class="plan-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/germany-plan.jpg" alt="">
-              </div>
-              <div class="plan-text">
-                  <p>ドイツを巡る人気のツアーです</p>
-                  <p>期間：3白5日〜</p>
-                  <p>料金：100,000〜</p>
-                  <p>空席状況：空席あり</p>
-                  <p class="plan-btn"><a href="#">もっとみる</a></p>
-              </div>
-          </li>
-          <li class="plan-item">
-            <h2 class="plan-title">東京</h2>
-              <div class="plan-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/tokyo-plan.jpg" alt="">
-              </div>
-              <div class="plan-text">
-                  <p>東京を巡る人気のツアーです</p>
-                  <p>期間：3白5日〜</p>
-                  <p>料金：100,000〜</p>
-                  <p>空席状況：空席あり</p>
-                  <p class="plan-btn"><a href="#">もっとみる</a></p>
-              </div>
-          </li>
+<?php
+  endwhile;
+  wp_reset_postdata();
+endif;
+?>
         </ul>
       </section>
     </article>

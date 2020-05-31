@@ -20,10 +20,14 @@ function get_main_title() {
 }
 
 // 子ページを取得
-function get_child_pages( $number = -1) {
-  $parent_id = get_the_ID();
+function get_child_pages( $number = -1, $specified_id = null) {
+  if( isset( $specified_id) ):
+    $parent_id = $specified_id;
+  else:
+    $parent_id = get_the_ID();
+  endif;
     $args = array(
-      'posts_per_page' => -1,
+      'posts_per_page' => $number,
       'post_type' => 'page',
       'orderby' => 'menu_order',
       'order' => 'ASC',
