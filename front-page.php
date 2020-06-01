@@ -89,7 +89,7 @@ endif;
         <p>
           こちらからご確認いただけます。
         </p>
-        <p class="btn"><a href="#">more</a></p>
+        <p class="btn"><a href="<?php echo home_url( 'company' ); ?>">more</a></p>
       </div>
     </section>
     </article>
