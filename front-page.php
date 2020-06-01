@@ -8,15 +8,32 @@ $term_obj = get_term_by( 'slug', 'news', 'category' );
 ?>
     <section class="content-wrapper">
         <div class="heading">
-          <h2 id="topics" class="slide-left">TOPICS</h2>
+          <h2 id="topics" class="slide-left"><?php echo $term_obj->name; ?><</h2>
         </div>
         <div class="content">
           <table>
             <tbody>
+<?php
+$args = array(
+  'post_type' => 'post',
+  'category_name' => 'news',
+  'post_per_page' =>3,
+);
+$news_posts = get_specific_posts( 'post', 'category', 'news', 3 );
+if( $news_posts->have_posts() ):
+  while( $news_posts->have_posts() ): $news_posts->the_post();
+?>
               <tr>
-                <th>2020.04.01</th>
-                <td>海外への渡航について。</td>
+                <a href="<?php the_permalink(); ?>">
+                  <th><?php the_time( 'Y.m.d' ); ?></th>
+                  <td><?php the_title(); ?><</td>
+                </a>
               </tr>
+<?php
+  endwhile;
+  wp_reset_postdata();
+endif;
+?>
             </tbody>
           </table>
           <p class="btn"><a href="#">more</a></p>
