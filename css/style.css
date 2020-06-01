@@ -285,6 +285,11 @@ section h2 {
   object-fit: cover;
 }
 
+.page-wrapper img {
+  height: 330px;
+  object-fit: cover;
+}
+
 /*メインビジュアルレスポンシブ*/
 @media screen and (max-width: 1199px) {
   .mainvisual img {
