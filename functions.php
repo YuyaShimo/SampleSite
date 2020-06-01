@@ -51,3 +51,20 @@ function get_main_image() {
   else:
     return '<img src="' . get_template_directory_uri(). '/images/bg-page-news.jpg" />';
 }
+
+//お知らせの抽出条件を関数として定義
+function get_specific_posts( $post_type, $taxonomy = null, $term = null, $number = -1 ) {
+  $args = array(
+    'post_type' => $post_type,
+    'tax_query' => array(
+      array(
+        'taxonomy' => $taxonomy,
+        'field' => 'slug',
+        'terms' => $term,
+      ),
+    ),
+    'posts_per_page' => $number,
+  );
+  $specific_posts = new WP_Query( $args );
+  return $specific_posts;
+}
