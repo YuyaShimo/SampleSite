@@ -76,6 +76,7 @@ if( $plan_pages->have_posts() ) :
 endif;
 ?>
         </ul>
+        <p class="btn"><a href="<?php echo home_url( 'plan' ); ?>">more</a></p>
       </section>
     </article>
     <!--旅行プランここまで-->
