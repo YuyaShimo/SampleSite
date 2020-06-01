@@ -36,7 +36,7 @@ endif;
 ?>
             </tbody>
           </table>
-          <p class="btn"><a href="#">more</a></p>
+          <p class="btn"><a href="<?php echo get_term_link( $term_obj ); ?>">more</a></p>
         </div>
     </section>
     </article>
