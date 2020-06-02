@@ -73,4 +73,9 @@
   <?php echo get_main_image(); ?>
     <h2><?php echo get_main_title(); ?></h2>
   </div>
+  <?php
+if( function_exists('bread_crumb') ):
+  bread_crumb();
+endif;
+?>
 <?php endif; ?>

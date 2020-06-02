@@ -299,6 +299,30 @@ section h2 {
 
 /*メインビジュアルここまで*/
 
+/*パンくずリストここから*/
+ul.bread_crumb {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 14px 0;
+}
+
+ul.bread_crumb li {
+  font-size: .8rem;
+}
+
+ul.bread_crumb li:after {
+  content: '＞';
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul.bread_crumb li:last-child:after {
+  content: '';
+}
+/*パンくずリストここまで*/
+
 /*お知らせここから*/
 .topics {
   padding: 120px;
