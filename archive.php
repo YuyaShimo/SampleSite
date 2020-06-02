@@ -14,6 +14,15 @@
 ?>
              
           </div>
+          <div class="pager">
+            <ul class="pagerlist">
+<?php
+if( function_exists( 'page_navi' )):
+  page_navi();
+endif;
+?>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

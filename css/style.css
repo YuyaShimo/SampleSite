@@ -323,6 +323,32 @@ ul.bread_crumb li:last-child:after {
 }
 /*パンくずリストここまで*/
 
+/*ページャーここから*/
+.pager {
+  margin: 7% auto 0;
+}
+ul .page_navi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+ul .page_navi li {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d0d0d0;
+  margin: 0 7px;
+  text-align: center;
+}
+
+ul .page_navi li.current {
+  border: 1px solid #334433;
+  background-color: #343434;
+  color: #fff;
+}
+
+/*ページャーここまで*/
+
 /*お知らせここから*/
 .topics {
   padding: 120px;
