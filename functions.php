@@ -68,3 +68,16 @@ function get_specific_posts( $post_type, $taxonomy = null, $term = null, $number
   $specific_posts = new WP_Query( $args );
   return $specific_posts;
 }
+
+//抜粋文の文字数を定義する
+function cms_excerpt_more() {
+  return '...';
+}
+
+add_filter( 'excerpt_more', 'cms_excerpt_more' );
+
+function cms_excerpt_length() {
+  return 80;
+}
+
+add_filter( 'excerpt_mblength', 'cms_excerpt_length' );
