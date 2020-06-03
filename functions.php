@@ -81,3 +81,6 @@ function cms_excerpt_length() {
 }
 
 add_filter( 'excerpt_mblength', 'cms_excerpt_length' );
+
+//抜粋機能を使用できるよう設定
+add_post_type_support( 'page', 'excerpt' );
